@@ -1,0 +1,3 @@
+# Collection
+
+source: `{{ page.path }}`
