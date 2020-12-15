@@ -1,7 +1,7 @@
 ---
-sort: 2
+sort: 1
 ---
 
-# Java
+# Spring Web MVC
 
 {% include list.liquid all=true %}

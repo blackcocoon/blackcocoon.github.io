@@ -1,7 +1,7 @@
 ---
-sort: 2
+sort: 6
 ---
 
-# Java
+# ETC
 
 {% include list.liquid all=true %}

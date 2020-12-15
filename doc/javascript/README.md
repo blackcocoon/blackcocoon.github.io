@@ -1,7 +1,7 @@
 ---
-sort: 2
+sort: 5
 ---
 
-# Java
+# Javascript
 
 {% include list.liquid all=true %}

@@ -1,7 +1,7 @@
 ---
-sort: 2
+sort: 4
 ---
 
-# Java
+# Secure Coding
 
 {% include list.liquid all=true %}
