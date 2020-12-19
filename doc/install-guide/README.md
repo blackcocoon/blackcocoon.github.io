@@ -1,7 +1,7 @@
 ---
-sort: 7
+sort: 6
 ---
 
-# ETC
+# install guide
 
 {% include list.liquid all=true %}
