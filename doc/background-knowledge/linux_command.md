@@ -3,12 +3,20 @@ sort: 1
 ---
 
 # Linux Command 
-Ref. https://mug896.github.io/bash-shell/index.html
 
+```tip
+아래는 bash 관련 유용한 사이트
+
+https://mug896.github.io/bash-shell/index.html
+```
 
 ## 1. netstat
 
-```bash
+```sh
+yum install net-tools
+```
+
+```sh
 netstat -tonp
 ```
 
@@ -85,6 +93,8 @@ The default is to append the LOGIN name to BASE_DIR and use that as the login di
 
 
 ## 5. 복수 개의 파일 이름 변경
+
+https://jybaek.tistory.com/543
 
 많은 파일 이름에서 특정 패턴을 찾아서 일괄 변경하기 위한 시도는 오래전부터 있었습니다.  
 아마도 가장 흔한 방법이 rename 일텐데, rename의 설치 방법에 따라 동작 여부가 약간 달라 문제가 있죠.
