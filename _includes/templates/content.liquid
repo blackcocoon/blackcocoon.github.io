@@ -13,8 +13,12 @@
         
         <!-- global hits tag -->
         <div style="text-align: right;">
-            <img style="width: inherit;" src="http://hits.dwyl.com/blackcocoon{{ page.url }}.svg" alt="hit count image"/>
+            {% capture hits_url %} http://hits.dwyl.com/blackcocoon{{ page.url }}.svg {% endcapture %}
+            <img style="width: inherit;" src="{{ hits_url | replace_first : "/.svg", ".svg"}}" alt="hit count image"/>
         </div>
+        
+        
+
         <div role="main" itemscope="itemscope" itemtype="https://schema.org/Article">
             <div class="markdown-body" itemprop="articleBody">
                 {{ content }}
