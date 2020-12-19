@@ -20,6 +20,24 @@
     {%- endif -%}
 {%- endif -%}
 
+
+{% assign path_last = page.url | slice: -1 %}
+{% if path_last != "/" %}
+<br><br>
+<hr>
+<br>
+<div>
+    <script src="https://utteranc.es/client.js"
+        repo="blackcocoon/blackcocoon.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+    </script>
+</div>
+<br>
+{%- endif -%}
+
 <hr>
 
 <div class="copyright text-center text-gray" role="contentinfo">
