@@ -3,6 +3,7 @@ sort: 1
 ---
 
 # Install Tomcat 9 on CentOS 7
+
 https://linuxize.com/post/how-to-install-tomcat-9-on-centos-7/
 
 This tutorial covers the steps required to install Tomcat 9.0 on CentOS 7.
@@ -23,7 +24,7 @@ We’ll create a new system user and group with home directory /opt/tomcat that 
 sudo useradd -m -U -d /opt/tomcat -s /bin/false tomcat
 ```
 
-### Download Tomcat
+## Download Tomcat
 
 Navigate to the /tmp directory and download the Tomcat zip file using the following wget command :
 ```sh
@@ -58,7 +59,7 @@ Make the scripts inside the bin directory executable by issuing the following `c
 sudo sh -c 'chmod +x /opt/tomcat/latest/bin/*.sh'
 ```
 
-### Create a systemd unit file
+## Create a systemd unit file
 To make Tomcat run as a service open your text editor and create a tomcat.service unit file in the /etc/systemd/system/ directory:
 
 ```sh
@@ -123,7 +124,7 @@ sudo systemctl status tomcat
    CGroup: /system.slice/tomcat.service
 ```
 
-### Adjust the Firewall
+## Adjust the Firewall
 If your server is protected by a firewall and you want to access the tomcat interface from the outside of the local network, you need to open port 8080.
 
 Use the following commands to open the necessary port:
@@ -136,7 +137,7 @@ sudo firewall-cmd --reload
 In most cases, when running Tomcat in a production environment, you will use a load balancer or reverse proxy. It’s a best practice to allow access to port 8080 only to your internal network.
 
 
-### Configure Tomcat Web Management Interface
+## Configure Tomcat Web Management Interface
 At this point Tomcat is installed, and we can access it with a web browser on port 8080, but we can not access the web management interface because we have not created a user yet.
 
 Tomcat users and their roles are defined in the tomcat-users.xml file.
@@ -229,7 +230,7 @@ Tomcat virtual host manager dashboard is available at `http://<your_domain_or_IP
 ![Tomcat virtual host manager](/assets/images/install-guide/tomcat-3.jpg)
 
 
-### Conclusion
+## Conclusion
 You have successfully installed Tomcat 9.0 on your CentOS 7 system and learned how to access the Tomcat management interface. You can now visit the official Apache Tomcat 9.0 Documentation and learn more about the Apache Tomcat features.
 
 If you hit a problem or have feedback, leave a comment below.
