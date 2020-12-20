@@ -1,4 +1,4 @@
-title: Blackcocon Dev Blog
+title: Blackcocon Dev Memo
 description: my-home
 
 theme: null
@@ -10,6 +10,9 @@ theme: null
 
 readme_index:
   with_frontmatter: true
+
+google: 
+  gtag: G-7T8TWDZB4T
 
 plugins:
   - jemoji
@@ -29,3 +32,4 @@ exclude:
   - package-lock.json
   - webpack.config.js
   - jekyll-rtd-theme.gemspec
+
