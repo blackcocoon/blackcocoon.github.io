@@ -1,7 +1,0 @@
----
-sort: 7
----
-
-# ETC
-
-{% include list.liquid all=true %}
